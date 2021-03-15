@@ -41,7 +41,6 @@ public class InHome {
             System.out.println();
         }
     }
-
     private static void multiply2() {
         int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < arr.length; i++) {
