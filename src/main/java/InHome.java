@@ -2,11 +2,11 @@ public class InHome {
     public static void main(String[] args) {
         // 6 не смог сделать
         // 7 не смог сделать
-    minmax();
-    ne_smoq_sdelat_i_poetomu_vzal_is_ineta();
-    multiply2();
-    Plus3();
-    Switch();
+        minmax();
+        ne_smoq_sdelat_i_poetomu_vzal_is_ineta();
+        multiply2();
+        Plus3();
+        Switch();
     }
 
 
@@ -22,8 +22,8 @@ public class InHome {
                 b = arr[i];
             }
         }
-        System.out.println("max:"+a);
-        System.out.println("min:"+b);
+        System.out.println("max:" + a);
+        System.out.println("min:" + b);
     }
 
     private static void ne_smoq_sdelat_i_poetomu_vzal_is_ineta() {
@@ -34,21 +34,20 @@ public class InHome {
             arr[i][arr.length - i - 1] = 1;
         }
 
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j]);
+        for (int[] ints : arr) {
+            for (int anInt : ints) {
+                System.out.print(anInt);
             }
             System.out.println();
         }
     }
-
     private static void multiply2() {
         int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 6) {
                 arr[i] *= 2;
             }
-            System.out.print(arr[i]+ " ");
+            System.out.print(arr[i] + " ");
 
         }
         System.out.println();
@@ -60,7 +59,7 @@ public class InHome {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = c;
             c += 3;
-            System.out.print(arr[i]+" ");
+            System.out.print(arr[i] + " ");
 
         }
         System.out.println();
@@ -74,7 +73,7 @@ public class InHome {
             } else {
                 rand[i] = 0;
             }
-            System.out.print(rand[i]+ " ");
+            System.out.print(rand[i] + " ");
         }
     }
 }
